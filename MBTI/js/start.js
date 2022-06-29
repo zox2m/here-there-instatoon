@@ -29,15 +29,15 @@ function setResult(){
 }
 
 function goResult(){
-  qna.style.WebkitAnimation = "fadeOut 1s";
-  qna.style.animation = "fadeOut 1s";
+  qna.style.WebkitAnimation = "fadeOut 0.5s";
+  qna.style.animation = "fadeOut 0.5s";
   setTimeout(() => {
-    result.style.WebkitAnimation = "fadeIn 1s";
-    result.style.animation = "fadeIn 1s";
+    result.style.WebkitAnimation = "fadeIn 0.5s";
+    result.style.animation = "fadeIn 0.5s";
     setTimeout(() => {
       qna.style.display = "none";
       result.style.display = "block"
-    }, 450)})
+    }, 200)})
     setResult();
 }
 
@@ -90,16 +90,16 @@ function goNext(qIdx){
 }
 
 function begin(){
-  main.style.WebkitAnimation = "fadeOut 1s";
-  main.style.animation = "fadeOut 1s";
+  main.style.WebkitAnimation = "fadeOut 0.5s";
+  main.style.animation = "fadeOut 0.5s";
   setTimeout(() => {
-    qna.style.WebkitAnimation = "fadeIn 1s";
-    qna.style.animation = "fadeIn 1s";
+    qna.style.WebkitAnimation = "fadeIn 0.5s";
+    qna.style.animation = "fadeIn 0.5s";
     setTimeout(() => {
       main.style.display = "none";
       qna.style.display = "block"
-    }, 450)
+    }, 200)
     let qIdx = 0;
     goNext(qIdx);
-  }, 450);
+  },200);
 }
