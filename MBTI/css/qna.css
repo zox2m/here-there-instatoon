@@ -8,14 +8,14 @@
   border-radius: 20px;
   padding: 20px;
   font-size: 15px;
-  width: 80%
+  width: 95%
 }
 
 .answerList {
   background-color: whitesmoke;
   border-radius: 20px;
   display: block;
-  width: 80%;
+  width: 95%;
   border: 0px;
   font-size: 12px;
 }
@@ -27,7 +27,7 @@
 
 .status {
   height: 20px;
-  width: 80%;
+  width: 95%;
   background-color: white;
   border-radius: 20px;
 }
