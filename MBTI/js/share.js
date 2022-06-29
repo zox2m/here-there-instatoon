@@ -5,8 +5,8 @@ function setShare(){
   var resultAlt = resultImg.firstElementChild.alt;
   const shareTitle = '여기저기 인생게임';
   const shareDes = infoList[resultAlt].name;
-  const shareImage = url + 'img/image-' + resultAlt + '.png';
-  const shareURL = url + 'page/result-' + resultAlt + '.html';
+  const shareImage = url + '/img/image-' + resultAlt + '.png';
+  const shareURL = url + '/page/result-' + resultAlt + '.html';
 
   Kakao.Link.sendDefault({
     objectType: 'feed',
