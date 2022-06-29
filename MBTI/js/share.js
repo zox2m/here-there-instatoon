@@ -1,6 +1,6 @@
 const url = 'https://herethereinstatoon.netlify.app';
 
-function kakaoShare(){
+function setShare(){
   var resultImg = document.querySelector('#resultImg');
   var resultAlt = resultImg.firstElementChild.alt;
   const shareTitle = '여기저기 인생게임';
