@@ -3,5 +3,7 @@ body{
 }
 
 *{
-  font-family: 'Nanum Pen Script', cursive;
+  /*font-family: 'Nanum Pen Script', cursive;*/
+  font-family: 'Gaegu', cursive;
+  /*코맨트 적는 주석 */
 }
