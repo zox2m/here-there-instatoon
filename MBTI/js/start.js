@@ -70,12 +70,12 @@ function addAnswer(answerText, qIdx, idx){
       for(let i = 0; i < children.length; i++){
         children[i].style.display = 'none';
       }
-      goNext(++qIdx);
+      goNext_here(++qIdx);
     },450)
   }, false);
 }
 
-function goNext(qIdx){
+function goNext_here(qIdx){
   if(qIdx === endPoint){
     goResult();
     return;
@@ -101,7 +101,7 @@ function begin_here(){
       qna.style.display = "block"
     }, 200)
     let qIdx = 0;
-    goNext(qIdx);
+    goNext_here(qIdx);
   },200);
 }
 
@@ -134,7 +134,7 @@ function addAnswer_there(answerText, qIdx, idx){
       for(let i = 0; i < children.length; i++){
         children[i].style.display = 'none';
       }
-      goNext(++qIdx);
+      goNext_there(++qIdx);
     },450)
   }, false);
 }
