@@ -4,17 +4,19 @@ const result = document.querySelector("#result");
 
 const endPoint = 12;
 const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+var isThere = 0;
 
-function calResult(){
+/*여기 */
+function calResult_here(){
   console.log(select);
   var result = select.indexOf(Math.max(...select));
   return result;
 }
 
-function setResult(){
-  let point = calResult();
+function setResult_here(){
+  let point = calResult_here();
   const resultName = document.querySelector('.resultname');
-  resultName.innerHTML = infoList[point].name;
+  resultName.innerHTML = infoList_here[point].name;
 
   var resultImg = document.createElement('img');
   const imgDiv = document.querySelector('#resultImg');
@@ -25,10 +27,10 @@ function setResult(){
   imgDiv.appendChild(resultImg);
 
   const resultDesc = document.querySelector('.resultDesc');
-  resultDesc.innerHTML = infoList[point].desc;
+  resultDesc.innerHTML = infoList_here[point].desc;
 }
 
-function goResult(){
+function goResult_here(){
   qna.style.WebkitAnimation = "fadeOut 0.5s";
   qna.style.animation = "fadeOut 0.5s";
   setTimeout(() => {
@@ -38,11 +40,10 @@ function goResult(){
       qna.style.display = "none";
       result.style.display = "block"
     }, 200)})
-    setResult();
+    setResult_here();
 }
 
-/*여기 */
-function addAnswer(answerText, qIdx, idx){
+function addAnswer_here(answerText, qIdx, idx){
   var a = document.querySelector('.answerBox');
   var answer = document.createElement('button');
   answer.classList.add('answerList');
@@ -77,14 +78,14 @@ function addAnswer(answerText, qIdx, idx){
 
 function goNext_here(qIdx){
   if(qIdx === endPoint){
-    goResult();
+    goResult_here();
     return;
   }
 
   var q = document.querySelector('.qBox');
   q.innerHTML = qnaList_here[qIdx].q;
   for(let i in qnaList_here[qIdx].a){
-    addAnswer(qnaList_here[qIdx].a[i].answer, qIdx, i);
+    addAnswer_here(qnaList_here[qIdx].a[i].answer, qIdx, i);
   }
   var status = document.querySelector('.statusBar');
   status.style.width = (100/endPoint) * (qIdx+1) + '%';
@@ -106,6 +107,42 @@ function begin_here(){
 }
 
 /*저기 */
+function calResult_there(){
+  console.log(select);
+  var result = select.indexOf(Math.max(...select));
+  return result;
+}
+
+function setResult_there(){
+  let point = calResult_there();
+  const resultName = document.querySelector('.resultname');
+  resultName.innerHTML = infoList_there[point].name;
+
+  var resultImg = document.createElement('img');
+  const imgDiv = document.querySelector('#resultImg');
+  var imgURL = 'img/image-' + point + '.png';
+  resultImg.src = imgURL;
+  resultImg.alt = point;
+  resultImg.classList.add('img-fluid');
+  imgDiv.appendChild(resultImg);
+
+  const resultDesc = document.querySelector('.resultDesc');
+  resultDesc.innerHTML = infoList_there[point].desc;
+}
+
+function goResult_there(){
+  qna.style.WebkitAnimation = "fadeOut 0.5s";
+  qna.style.animation = "fadeOut 0.5s";
+  setTimeout(() => {
+    result.style.WebkitAnimation = "fadeIn 0.5s";
+    result.style.animation = "fadeIn 0.5s";
+    setTimeout(() => {
+      qna.style.display = "none";
+      result.style.display = "block"
+    }, 200)})
+    setResult_there();
+}
+
 function addAnswer_there(answerText, qIdx, idx){
   var a = document.querySelector('.answerBox');
   var answer = document.createElement('button');
@@ -141,20 +178,21 @@ function addAnswer_there(answerText, qIdx, idx){
 
 function goNext_there(qIdx){
   if(qIdx === endPoint){
-    goResult();
+    goResult_there();
     return;
   }
 
   var q = document.querySelector('.qBox');
   q.innerHTML = qnaList_there[qIdx].q;
   for(let i in qnaList_there[qIdx].a){
-    addAnswer(qnaList_there[qIdx].a[i].answer, qIdx, i);
+    addAnswer_there(qnaList_there[qIdx].a[i].answer, qIdx, i);
   }
   var status = document.querySelector('.statusBar');
   status.style.width = (100/endPoint) * (qIdx+1) + '%';
 }
 
 function begin_there(){
+  isThere = 1;
   main.style.WebkitAnimation = "fadeOut 0.5s";
   main.style.animation = "fadeOut 0.5s";
   setTimeout(() => {
