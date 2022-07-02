@@ -4,14 +4,14 @@ function setShare(){
   var resultImg = document.querySelector('#resultImg');
   var resultAlt = resultImg.firstElementChild.alt;
   const shareTitle = '여기저기 인생게임';
-  const shareDes = infoList_here[resultAlt].name;
-  const shareImage = url + '/img/image-' + resultAlt + '.png';
-  const shareURL = url + '/page/result-' + resultAlt + '.html';
+  var shareDes = infoList_here[resultAlt].name;
+  var shareImage = url + '/img/here-' + resultAlt + '.png';
+  var shareURL = url + '/page/here-' + resultAlt + '.html';
   
-  if(isThere){
+  if(isThere ==1){
+    shareImage = url + '/img/there-' + resultAlt + '.png';
+    shareURL = url + '/page/there-' + resultAlt + '.html';
     shareDes = infoList_there[resultAlt].name;
-    shareImage = url + '/img/image-' + resultAlt + '.png';
-    shareURL = url + '/page/result-' + resultAlt + '.html';
   }
 
   Kakao.Link.sendDefault({

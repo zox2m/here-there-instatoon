@@ -9,8 +9,7 @@
   <meta name="description" content="여기저기 인생게임">
 
   <!-- sns share -->
-  <meta property="og:url" content="https://herethereinstatoon.
-  netlify.app" />
+  <meta property="og:url" content="https://herethereinstatoon.netlify.app" />
   <meta property="og:title" content="여기저기 인생게임" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="./img/share.png" />
@@ -57,7 +56,7 @@
         <img src="./img/main.png" alt="mainImage" class="img-fluid">
       </div>
       <p>
-        여기저기의 인생을 마음대로 망가뜨려보세요 <br>
+        캐릭터를 선택하세요! <br>
       </p>
       <button type="button" class="btn btn-outline-info mt-3 btn-lg" onclick="js:begin_here()">여기</button>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        
@@ -86,8 +85,13 @@
 
       </div>
       <div class="resultDesc">
-
       </div>
+      <script type="text/javascript">
+        function moveHome(){
+          location.href = "./";
+        }
+      </script>
+      <button type="button" class="gohome mt-3 py-2 px-3" onclick="js:moveHome()">다시하기</button>
       <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:setShare()">공유하기</button>
     </section>
     <script src="./js/data.js" charset="utf-8"></script>
