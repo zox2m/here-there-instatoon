@@ -89,7 +89,7 @@ function goNext(qIdx){
   status.style.width = (100/endPoint) * (qIdx+1) + '%';
 }
 
-function begin(){
+function begin_here(){
   main.style.WebkitAnimation = "fadeOut 0.5s";
   main.style.animation = "fadeOut 0.5s";
   setTimeout(() => {
