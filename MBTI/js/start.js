@@ -15,8 +15,11 @@ function calResult_here(){
 
 function setResult_here(){
   let point = calResult_here();
+  /*이름 출력 날림 */
+  /*
   const resultName = document.querySelector('.resultname');
   resultName.innerHTML = infoList_here[point].name;
+  */
 
   var resultImg = document.createElement('img');
   const imgDiv = document.querySelector('#resultImg');
@@ -26,8 +29,11 @@ function setResult_here(){
   resultImg.classList.add('img-fluid');
   imgDiv.appendChild(resultImg);
 
+  /*결과 출력 날림*/
+  /*
   const resultDesc = document.querySelector('.resultDesc');
   resultDesc.innerHTML = infoList_here[point].desc;
+  */
 }
 
 function goResult_here(){

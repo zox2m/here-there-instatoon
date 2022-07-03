@@ -61,6 +61,7 @@
       <button type="button" class="btn btn-outline-info mt-3 btn-lg" onclick="js:begin_here()">여기</button>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        
       <button type="button" class="btn btn-outline-info mt-3 btn-lg" onclick="js:begin_there()">저기</button>
+
     </section>
 
     <section id="qna">
@@ -77,32 +78,53 @@
     </section>
 
     <section id="result" class="mx-auto my-5 py-5 px-3">
-      <h1>당신의 결과는?!</h1>
+      
+      <!--  결과 이름 출력
       <div class="resultname">
-
       </div>
+      -->
+
+      <!-- 결과 이미지 -->
       <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
-
       </div>
+
+      <!--결과 본문 출력
       <div class="resultDesc">
       </div>
+      -->
+
       <script type="text/javascript">
         function moveHome(){
           location.href = "./";
         }
       </script>
+
       <script type="text/javascript">
         function moveInsta(){
           location.href = "https://www.instagram.com/here.__.there/";
         }
       </script>
-      <button type="button" class="goinsta mt-3 py-2 px-3" onclick="js:moveInsta()">여기저기 보러가기!</button>
-      <button type="button" class="gohome mt-3 py-2 px-3" onclick="js:moveHome()">다시하기</button>
-      <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:setShare()">공유하기</button>
+      <div> 
+        <button type="button" class="goinsta mt-3 py-2 px-3" onclick="js:moveInsta()">여기저기 보러가기!</button>
+        <div> 
+          <button type="button" class="gohome mt-3 py-2 px-3" onclick="js:moveHome()">다시하기</button>
+          <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:setShare()">공유하기</button>
+        </div>
+      </div>
+
     </section>
     <script src="./js/data.js" charset="utf-8"></script>
     <script src="./js/start.js" charset="utf-8"></script>
     <script src="./js/share.js" charset="utf-8"></script>
+
+    
+  </div>
+  <div>
+    <ins class="kakao_ad_area" style="display:none;" 
+    data-ad-unit    = "DAN-mpiS18jruUgTPN7o"  
+    data-ad-width   = "320" 
+    data-ad-height  = "50"></ins> 
+    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
   </div>
 </body>
 

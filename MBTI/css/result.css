@@ -1,13 +1,13 @@
 #result{
   display: none;
-  background-color: whitesmoke;
+  background-color: white;
   width: 95%;
   text-align: center;
   border-radius: 20px;
 }
 
 #shareResult{
-  background-color: whitesmoke;
+  background-color: white;
   width: 95%;
   text-align: center;
   border-radius: 20px;
@@ -30,7 +30,7 @@
 }
 
 .kakao:hover, .kakao:focus {
-  background-color: whitesmoke;
+  background-color: white;
   color: #FEE500;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .gohome:hover, .gohome:focus {
-  background-color: whitesmoke;
+  background-color: white;
   color: rgba(133,198,211,1);
 }
 
@@ -56,7 +56,7 @@
 }
 
 .goinsta:hover, .goinsta:focus {
-  background-color: whitesmoke;
-  background: linear-gradient(90deg, whitesmoke, whitesmoke,whitesmoke);
+  background-color: white;
+  background: linear-gradient(90deg, white, white,white);
   color: rgb(131,58,180);
 }
