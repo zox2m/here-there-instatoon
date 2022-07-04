@@ -121,9 +121,11 @@ function calResult_there(){
 
 function setResult_there(){
   let point = calResult_there();
+  /*
   const resultName = document.querySelector('.resultname');
   resultName.innerHTML = infoList_there[point].name;
-
+  */
+ 
   var resultImg = document.createElement('img');
   const imgDiv = document.querySelector('#resultImg');
   var imgURL = 'img/there-' + point + '.png';
@@ -132,8 +134,10 @@ function setResult_there(){
   resultImg.classList.add('img-fluid');
   imgDiv.appendChild(resultImg);
 
+  /*
   const resultDesc = document.querySelector('.resultDesc');
   resultDesc.innerHTML = infoList_there[point].desc;
+  */
 }
 
 function goResult_there(){
