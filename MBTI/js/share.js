@@ -1,4 +1,4 @@
-const url = 'https://herethereinstatoon.netlify.app';
+const url = 'https://instatoon-here-there.netlify.app/';
 
 function setShare(){
   var resultImg = document.querySelector('#resultImg');
