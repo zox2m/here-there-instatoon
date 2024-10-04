@@ -1,3 +1,10 @@
+### 여기저기 인생게임!
+인생 고민중인 여기저기의 선택을 도와 엔딩을 바꾸어보자! 
+![Untitled (3)](https://github.com/user-attachments/assets/2e3266e1-ffaf-44d0-8e5c-b69fb260233f)
+![Untitled (2)](https://github.com/user-attachments/assets/a9c6ab48-e678-481e-823b-54794343f7f7)
+
+
+-------------
 --강의자료 --
 (판다코딩)
 인프런: https://inf.run/2rSZ  
@@ -5,5 +12,5 @@
 
 -------------
 
-여기저기 인생게임!
-심리테스트처럼 선택지 골라서 결과 확인하는 형식~ 
+
+
