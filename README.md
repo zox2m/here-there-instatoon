@@ -1,5 +1,6 @@
 ### 여기저기 인생게임!
 인생 고민중인 여기저기의 선택을 도와 엔딩을 바꾸어보자! 
+
 ![Untitled (3)](https://github.com/user-attachments/assets/2e3266e1-ffaf-44d0-8e5c-b69fb260233f)
 ![Untitled (2)](https://github.com/user-attachments/assets/a9c6ab48-e678-481e-823b-54794343f7f7)
 
